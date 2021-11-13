@@ -12,10 +12,29 @@ link apk : https://drive.google.com/file/d/1xztOjZOBM5VnBNRbBRBfsObiwvWx2rRE/vie
 ## Description
 this is a calculator application that I made for use on android, this application is a simple calculator made using the kivy framework, kivy is a python framework that can run on Linux, Windows, OS X, Android, iOS, and Raspberry Pi
 
-## requirements
-````python
-Kivy==2.0.0
-````
+<h2> Tools </h2>
+<table>
+    <tr>
+        <th>No</th>
+        <th>Tools</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Python</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Kivy</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Visual Studio Code</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Google Colab</td>
+    </tr>
+</table>
 
 ## Usage
 ````python
