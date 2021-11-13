@@ -6,7 +6,7 @@
 
 <h2> Screenshoot </h2>
 <img src="https://media.discordapp.net/attachments/888079059010093146/908625272427905034/Screenshot_20211112-145215.png?width=237&height=473" alt="Flowers in Chania">
-<br><br>
+<br>
 link apk : https://drive.google.com/file/d/1xztOjZOBM5VnBNRbBRBfsObiwvWx2rRE/view?usp=sharing
 
 ## Description
