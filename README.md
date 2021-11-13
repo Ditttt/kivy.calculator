@@ -7,6 +7,8 @@
 <h2> Screenshoot </h2>
 <img src="https://media.discordapp.net/attachments/888079059010093146/908625272427905034/Screenshot_20211112-145215.png?width=237&height=473" alt="Flowers in Chania">
 <br>
+If you want to try it please click the link below to download, this application is 100% safe no virus.
+
 link apk : https://drive.google.com/file/d/1xztOjZOBM5VnBNRbBRBfsObiwvWx2rRE/view?usp=sharing
 
 ## Description
@@ -36,7 +38,14 @@ this is a calculator application that I made for use on android, this applicatio
     </tr>
 </table>
 
+## Installation
+Here's how to install it on your computer
+````python
+git clone https://github.com/Ditttt/kivy.calculator.git
+````
+
 ## Usage
+Use the sentence below in your terminal to try it out
 ````python
 python main.py
 ````
