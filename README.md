@@ -1,6 +1,4 @@
-<p align="center">
-    # Simple Calculator Mobile Apps
-</p>
+# Simple Calculator Mobile Apps
 
 Link Apk : https://drive.google.com/file/d/1xztOjZOBM5VnBNRbBRBfsObiwvWx2rRE/view?usp=sharing
 
