@@ -14,20 +14,14 @@ class CalculatorWidget(Widget):
         if "error in evaluation" in (prev_number := self.ids.input_box.text):
             prev_number = ""
 
-        if prev_number == "0":
-            self.ids.input_box.text = ""
-            self.ids.input_box.text = f"{value}"
-
-        else:
-            self.ids.input_box.text = f"{prev_number}{value}"
+        self.ids.input_box.text, self.ids.input_box.text = "", f"{value}" if prev_number == "0" else f"{prev_number}{value}"
 
     def sings(self, sing):
         self.ids.input_box.text = f"{self.ids.input_box.text}{sing}"
 
     def remove_last(self):
         self.ids.input_box.text = self.ids.input_box.text[:-1]
-        if self.ids.input_box.text == "":
-            self.ids.input_box.text = "0"
+        self.ids.input_box.text = "0" if self.ids.input_box.text == "" else self.ids.input_box.text
 
     def results(self):
         try:
@@ -48,20 +42,19 @@ class CalculatorWidget(Widget):
             self.ids.input_box.text = f"-{prev_number}"
 
     def dot(self):
-        prev_number = self.ids.input_box.text
-        num_list = re.split("\+|\*|-|/|%", prev_number)
+        num_list = re.split("\+|\*|-|/|%", self.ids.input_box.text)
         if (
-            "+" in prev_number
-            or "*" not in prev_number
-            or "-" not in prev_number
-            or "/" not in prev_number
-            or "%" not in prev_number
+            "+" in self.ids.input_box.text
+            or "*" not in self.ids.input_box.text
+            or "-" not in self.ids.input_box.text
+            or "/" not in self.ids.input_box.text
+            or "%" not in self.ids.input_box.text
         ) and "." not in num_list[-1]:
-            self.ids.input_box.text = f"{prev_number}."
-        if "." in prev_number:
+            self.ids.input_box.text = f"{self.ids.input_box.text}."
+        if "." in self.ids.input_box.text:
             pass
         else:
-            prev_number = f"{prev_number}."
+            prev_number = f"{self.ids.input_box.text}."
             self.ids.input_box.text = prev_number
 
 
