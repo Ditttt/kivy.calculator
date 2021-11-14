@@ -35,16 +35,16 @@ link apk : https://drive.google.com/file/d/1L9KBhT1u-jz-3NmJWpwpSKHy09-X-oJj/vie
         <td>2</td>
         <td>Kivy</td>
     </tr>
-    <tr>
+    <!-- <tr>
         <td>3</td>
-        <td>pyinstaller</td>
+        <td>pyinstaller</td> -->
     </tr>
     <tr>
-        <td>4</td>
+        <td>3</td>
         <td>Visual Studio Code</td>
     </tr>
     <tr>
-        <td>5</td>
+        <td>4</td>
         <td>Google Colab</td>
     </tr>
 </table>
