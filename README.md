@@ -9,7 +9,7 @@
 <br>
 If you want to try it please click the link below to download, this application is 100% safe no virus.
 
-link apk : https://drive.google.com/file/d/1xztOjZOBM5VnBNRbBRBfsObiwvWx2rRE/view?usp=sharing
+link apk : https://drive.google.com/file/d/1L9KBhT1u-jz-3NmJWpwpSKHy09-X-oJj/view?usp=sharing
 
 <h2> Windows </h2>
 <img src='https://media.discordapp.net/attachments/811059158143991859/909390543140827196/unknown.png?width=609&height=473'>
