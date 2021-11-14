@@ -26,6 +26,8 @@ class CalculatorWidget(Widget):
 
     def remove_last(self):
         self.ids.input_box.text = self.ids.input_box.text[:-1]
+        if self.ids.input_box.text == "":
+            self.ids.input_box.text = "0"
 
     def results(self):
         try:
