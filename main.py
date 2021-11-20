@@ -1,6 +1,5 @@
 from kivy.app import App
 from kivy.uix.widget import Widget
-from kivy.core.window import Window
 from kivy.lang.builder import Builder
 import re
 import sys
@@ -11,10 +10,10 @@ class CalculatorWidget(Widget):
         self.ids.input_box.text = "0"
 
     def button_value(self, value):
-        if "error in evaluation" in (prev_number := self.ids.input_box.text):
-            prev_number = ""
+        if "error in evaluation" in self.ids.input_box.text:
+            self.ids.input_box.text = ""
 
-        self.ids.input_box.text, self.ids.input_box.text = "", f"{value}" if prev_number == "0" else f"{prev_number}{value}"
+        self.ids.input_box.text, self.ids.input_box.text = "", f"{value}" if self.ids.input_box.text == "0" else f"{self.ids.input_box.text}{value}"
 
     def sings(self, sing):
         self.ids.input_box.text = f"{self.ids.input_box.text}{sing}"
@@ -35,11 +34,11 @@ class CalculatorWidget(Widget):
             print(e)
 
     def positive_number(self):
-        if "-" in (prev_number := self.ids.input_box.text):
-            self.ids.input_box.text = f'{prev_number.replace("-", "")}'
+        if "-" in self.ids.input_box.text:
+            self.ids.input_box.text = f'{self.ids.input_box.text.replace("-", "")}'
 
         else:
-            self.ids.input_box.text = f"-{prev_number}"
+            self.ids.input_box.text = f"-{self.ids.input_box.text}"
 
     def dot(self):
         num_list = re.split("\+|\*|-|/|%", self.ids.input_box.text)
